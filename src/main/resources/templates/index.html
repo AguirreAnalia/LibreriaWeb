@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria Web - Inicio</title>
+</head>
+<body id="bodyIndex">
+    <header>
+      <!--
+        <section id="barraNavegacionIndex">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" th:href="@{/libro/lista}">Libro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" th:href="@{/autor/lista}">Autor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" th:href="@{/editorial/lista}">Editorial</a>
+            </li>
+          </ul>
+        </section>
+      -->
+        <section>
+            <div class="jumbotron">
+                <h1 class="display-4 text-center font-weight-bold">Libreria Web</h1>
+                <p class="lead text-center font-italic">Proyecto de Spring MVC.</p>
+                <hr class="my-4">
+                <p class="text-center">Este es un proyecto de una Libreria Web online de ficción.<br> Estamos trabajando con el <strong>ejercicio extra de la guia de Spring MVC.</strong> </p>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div>
+                <br>
+            </div>
+        </section>
+        <section class="container d-flex justify-content-around">
+            <article>
+                <div class="card " style="margin: 1rem; height: 12rem; width: 18rem;">
+                    <div class="card-body" style="margin-bottom: -2rem;">
+                      <h5 class="card-title text-center">LIBRO</h5>
+                    </div>
+                    <div class="card-body displayGrid">
+                      <a th:href="@{/libro/registro}" class="btn btn-success btn-lg" role="button" style="margin: 0.25rem;">Añadir un Libro</a>
+                      <a th:href="@{/libro/lista}" class="btn btn-primary btn-lg" role="button" style="margin: 0.25rem;">Ver lista de libros</a>
+                    </div>
+                  </div>
+            </article>
+            <article>
+                <div class="card " style="margin: 1rem; height: 12rem; width: 18rem;">
+                    <div class="card-body" style="margin-bottom: -2rem;">
+                      <h5 class="card-title text-center">AUTOR</h5>
+                    </div>
+                    <div class="card-body displayGrid">
+                      <a th:href="@{/autor/registro}" class="btn btn-success btn-lg" role="button" style="margin: 0.25rem;">Añadir un Autor</a>
+                      <a th:href="@{/autor/lista}" class="btn btn-primary btn-lg" role="button" style="margin: 0.25rem;">Ver lista de Autor</a>
+                    </div>
+                  </div>
+            </article>
+            <article>
+                <div class="card " style="margin: 1rem; height: 12rem; width: 18rem;">
+                    <div class="card-body" style="margin-bottom: -2rem;">
+                      <h5 class="card-title text-center">EDITORIAL</h5>
+                    </div>
+                    <div class="card-body displayGrid">
+                      <a th:href="@{/editorial/registro}" class="btn btn-success btn-lg" role="button" style="margin: 0.25rem;">Añadir una Editorial</a>
+                      <a th:href="@{/editorial/lista}" class="btn btn-primary btn-lg" role="button" style="margin: 0.25rem;">Ver lista de Editorial</a>
+                    </div>
+                  </div>
+            </article>
+        </section>
+      </main>
+      <!--
+      <footer class="container">
+          <div class="d-flex justify-content-between align-items-center pt-5 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">&copy; 2022 Egg Education</p>
+        
+            <a href="/" class="col-sm d-block align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            </a>
+        
+            <ul class="nav col-sm justify-content-center">
+              <li class="nav-item"><a href="https://linkedin.com/in/mauro-nahuel-chapero-java/" target="_blank" class="nav-link px-2 text-muted">Autor</a></li>
+            </ul>
+          </div>
+      </footer>
+      -->
+</body>
+</html>
